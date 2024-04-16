@@ -5,11 +5,9 @@ import Titulo from "../../Components/Titulo/Titulo"
 const Home = () => {
     return (
         <>
-        <h1>TITULO</h1>
+            <Titulo text="To-Do-List"/>
             <Button text="Agregar" />
-            <Button text="Quitar" />
         </>
-
     )
 }
 

@@ -1,6 +1,6 @@
-.Button{
+.agregar{
+    padding: 1rem;
     width: 10rem;
-}
-.boton-quitar{
-
+    background-color: beige;
+    border-radius: 1rem;
 }
