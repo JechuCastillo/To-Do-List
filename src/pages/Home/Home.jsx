@@ -5,8 +5,7 @@ import Titulo from "../../Components/Titulo/Titulo"
 const Home = () => {
     return (
         <>
-            <Titulo text="To-Do-List"/>
-            <Button text="Agregar" />
+            <Titulo text="To-Do-List"></Titulo>
         </>
     )
 }
