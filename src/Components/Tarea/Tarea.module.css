@@ -1,20 +1,13 @@
-.tareaACompletar{
+.tamanio {
     width: 20rem;
     height: 25rem;
+    border-radius: 1rem;
+}
+
+.colorRojo {
     background-color: #FFBFBF;
-    border-radius: 1rem;
-
 }
-.tareaCompletada{
-    width: 20rem;
-    height: 25rem;
+
+.colorVerde {
     background-color: #CFFFD4;
-    border-radius: 1rem;
-}
-
-.flex{
-    margin-top: 2rem;
-    display: flex;
-    gap:2rem;
-    justify-content: center;
 }

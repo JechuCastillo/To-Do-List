@@ -1,6 +1,15 @@
 .agregar{
     padding: 1rem;
-    width: 10rem;
-    background-color: beige;
-    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0.7rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 3rem;
 }

@@ -1,17 +1,19 @@
 import Input from '../Input/Input';
 import style from './Tarea.module.css';
 
-const Tarea = ({ text }) => {
+const Tarea = ({color}) => {
+    let name;
+if(color=='rojo'){
+    name=style.colorRojo;
+
+}else{
+
+    name=style.colorVerde
+}
     return (
         <>
-            <div className={style.flex}>
-                <div className={style.tareaACompletar}>
-                    <Input text="Buscar..."></Input>
-                </div>
-
-                <div className={style.tareaCompletada}>
-                    <Input text="Buscar..."></Input>
-                </div>
+            <div className={`${style.tamanio} ${name}`}>
+                <Input></Input>
             </div>
         </>
 

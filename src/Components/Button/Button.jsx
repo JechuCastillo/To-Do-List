@@ -1,8 +1,8 @@
 import style from './Button.module.css';
 
-const Button = ({ text, color }) => {
+const Button = ({ text}) => {
     return (
-        <button className={style.agregar}> {text}</ button>
+        <button className={style.agregar}>{text}</ button>
     )
 }
 

@@ -4,11 +4,24 @@ import Input from "../../Components/Input/Input";
 import style from "./Home.module.css";
 import Titulo from "../../Components/Titulo/Titulo"
 import Tarea from "../../Components/Tarea/Tarea";
+import Contador from "../../Components/Contador/Contador";
 const Home = () => {
     return (
         <>
-                <Titulo text="To-Do-List"></Titulo>
-                <Tarea></Tarea>
+            <Titulo text="To-Do-List"></Titulo>
+            <div className={`${style.flex}`}>
+                <article>
+                    <div className={`${style.contador}`}>
+                    <Contador text='Tareas por completar:'></Contador>
+                    <Button text={'+'}></Button>
+                    </div>
+                <Tarea color='rojo'/>
+                </article>
+                <div>
+                <Contador text='Tareas completadas:'></Contador>
+                <Tarea/>
+                </div>
+            </div>
         </>
     )
 }

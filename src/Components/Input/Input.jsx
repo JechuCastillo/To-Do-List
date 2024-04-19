@@ -1,10 +1,10 @@
 import style from './Input.module.css';
 
-const Input = ({text}) => {
+const Input = () => {
     return (
-        <div >
-            <input className={style.busqueda} type="text" placeholder={text} />
-        </div>
+        <>
+            <input className={style.busqueda} type="text" placeholder='Buscar...' />
+        </>
     )
 }
 export default Input;

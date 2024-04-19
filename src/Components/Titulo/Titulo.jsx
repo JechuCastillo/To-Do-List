@@ -1,9 +1,9 @@
 import style from './Titulo.module.css'
 
-const Titulo = ({ text }) => {
+const Titulo = (props) => {
     return (
         <header>
-            <h1 className={style.titulo}>{text}</h1>
+            <h1 className={style.titulo}>{props.text}</h1>
         </header>
     )
 }
