@@ -1,6 +1,4 @@
-.home{
-    background-color: aqua;
-}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -13,6 +11,9 @@
     margin: 0 auto;
 }
 
-.boton{
-    color:aqua;;
+.footer{
+    font-size: 2rem;
+    font-family: "Style Script", cursive;
+    position: sticky;
 }
+
