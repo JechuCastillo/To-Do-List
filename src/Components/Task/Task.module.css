@@ -4,8 +4,8 @@
     font-size: 0.7rem;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
     margin: 0 1rem;
+    margin-top: 0.2rem;
 }
 .botones{
     display: flex;

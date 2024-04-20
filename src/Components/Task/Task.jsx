@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import style from './Task.module.css';
 
 const Task = ({ descripcion }) => {
@@ -6,8 +7,8 @@ const Task = ({ descripcion }) => {
             <li className={style.task}>
                 <p className={style.descripcion}>{descripcion}</p>
                 <div className={style.botones}>
-                    <button></button>
-                    <button></button>
+                    <Button text={'-'}></Button>
+                    <Button text={'x'}></Button>
                 </div>
             </li>
         </>

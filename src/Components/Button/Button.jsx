@@ -1,8 +1,15 @@
 import style from './Button.module.css';
-
-const Button = ({ text}) => {
+let boton;
+const Button = ({ text }) => {
+    if (text == '-' || text == 'x') {
+        boton = style.botonTask;
+    } else {
+        boton = style.agregar;
+    }
     return (
-        <button className={style.agregar}>{text}</ button>
+        <button className={`${boton}`}>
+            {text}
+        </ button>
     )
 }
 
