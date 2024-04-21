@@ -17,10 +17,10 @@ const Home = () => {
                     <Tarea color='rojo'>
                     </Tarea>
                 </article>
-                <div>
+                <article>
                     <Contador text='Tareas completadas:'></Contador>
                     <Tarea />
-                </div>
+                </article>
             </div>
             <footer className={style.footer}><p>Castillo Jesus 2024</p></footer>
 
