@@ -4,7 +4,10 @@ import style from "./Home.module.css";
 import Titulo from "../../Components/Titulo/Titulo"
 import Tarea from "../../Components/Tarea/Tarea";
 import Contador from "../../Components/Contador/Contador";
+import Task from "../../Components/Task/Task";
 const Home = () => {
+    const [tarea, setTarea]=useState("");
+    const [tareas, setTareas]=useState([]);
     return (
         <>
             <Titulo text="To-Do-List"></Titulo>
@@ -12,7 +15,7 @@ const Home = () => {
                 <article>
                     <div className={`${style.contador}`}>
                         <Contador text='Tareas por completar:'></Contador>
-                        <Button text={'+'}></Button>
+                        <Button text={'+'} ></Button>
                     </div>
                     <Tarea color='rojo'>
                     </Tarea>

@@ -1,6 +1,7 @@
 import Input from '../Input/Input';
 import Task from '../Task/Task';
 import style from './Tarea.module.css';
+const tareas =[];
 
 const Tarea = ({ color }) => {
     let name;
@@ -14,10 +15,9 @@ const Tarea = ({ color }) => {
     return (
         <>
             <div className={`${style.tamanio} ${name}`}>
-                <Input></Input>
+                <Input placeholder="Buscar..."></Input>
                 <ul className={style.lista}>
-                    <Task descripcion='Texto'></Task>
-                    <Task descripcion='Estudiar'></Task>
+                    <Task descripcion="Pasear al nico"/ >
                 </ul>
             </div>
 
