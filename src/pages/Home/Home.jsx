@@ -6,8 +6,17 @@ import Tarea from "../../Components/Tarea/Tarea";
 import Contador from "../../Components/Contador/Contador";
 import Task from "../../Components/Task/Task";
 const Home = () => {
-    const [tarea, setTarea]=useState("");
-    const [tareas, setTareas]=useState([]);
+    const [tarea, setTarea] = useState("");
+    const [incomplentas, setIncompletas] = useState([]);
+    const [completadas, setCompletas] = useState([]);
+    const [contadorCompletas, setContadorCompletas] = useState(0);
+    const [contadorIncompletas, setContadorIncompletas] = useState(0);
+    const [descripcion, setDescripcion] = useState("");
+    const completarTarea = () => {
+    }
+    const borrarTarea = () => {
+    }
+    
     return (
         <>
             <Titulo text="To-Do-List"></Titulo>
@@ -15,7 +24,7 @@ const Home = () => {
                 <article>
                     <div className={`${style.contador}`}>
                         <Contador text='Tareas por completar:'></Contador>
-                        <Button text={'+'} ></Button>
+                        <Button text={'+'} handleClick={agregarTarea}></Button>
                     </div>
                     <Tarea color='rojo'>
                     </Tarea>
@@ -30,5 +39,11 @@ const Home = () => {
         </>
     )
 }
-
+const agregarTarea = () => {
+    return (
+        <>
+            <input type="text" placeholder="Agregar tarea..."/>
+        </>
+    )       
+}
 export default Home;

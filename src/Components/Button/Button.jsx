@@ -1,13 +1,12 @@
 import style from './Button.module.css';
 let boton;
+
 const Button = ({ text }) => {
-    if (text == '-' || text == 'x') {
-        boton = style.botonTask;
-    } else {
-        boton = style.agregar;
+    const handleClick=()=>{
+        console.log('pulsaste');
     }
     return (
-        <button className={`${boton}`}>
+        <button className={(text == '-'|| text == 'x') ? style.botonTask : style.agregar} onClick={handleClick}>
             {text}
         </ button>
     )

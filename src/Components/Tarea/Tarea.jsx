@@ -1,7 +1,7 @@
 import Input from '../Input/Input';
 import Task from '../Task/Task';
 import style from './Tarea.module.css';
-const tareas =[];
+const tareas = [];
 
 const Tarea = ({ color }) => {
     let name;
@@ -17,7 +17,6 @@ const Tarea = ({ color }) => {
             <div className={`${style.tamanio} ${name}`}>
                 <Input placeholder="Buscar..."></Input>
                 <ul className={style.lista}>
-                    <Task descripcion="Pasear al nico"/ >
                 </ul>
             </div>
 
